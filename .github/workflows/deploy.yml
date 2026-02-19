@@ -23,5 +23,5 @@ jobs:
           script: |
             # Navigate to your project directory
             cd /home/ubuntu/GithubAction
-            git pull origin main
-            sudo cp * /var/www/html/
+            git pull
+            sudo cp -rd * /var/www/html
