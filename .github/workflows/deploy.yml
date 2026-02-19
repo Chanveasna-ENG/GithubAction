@@ -22,13 +22,6 @@ jobs:
           port: 22
           script: |
             # Navigate to your project directory
-            cd /home/ubuntu/your-repo-folder
-            
-            # Pull the latest changes
+            cd /home/ubuntu/GithubAction
             git pull origin main
-            
-            # Install dependencies (example for Node.js)
-            npm install
-            
-            # Restart your application (example for PM2)
-            pm2 restart all
+            sudo cp * /var/www/html/
